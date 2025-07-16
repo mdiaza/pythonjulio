@@ -1,41 +1,200 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Web Sencilla</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sporting Cristal - El Mejor Club del Perú</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background-color: #e0f7fa;
+      color: #004d40;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #00bcd4;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 80px;
+      vertical-align: middle;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      display: inline-block;
+      margin-left: 15px;
+      vertical-align: middle;
+      font-size: 28px;
+    }
+
+    .contenido {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .video {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 640px;
+      height: 360px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .galeria img {
+      width: 300px;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    h2 {
+      border-left: 6px solid #00acc1;
+      padding-left: 10px;
+      color: #00796b;
+      margin-top: 40px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #00796b;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #00acc1;
+      color: white;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f1fdfd;
+    }
+
+    footer {
+      background-color: #00bcd4;
+      text-align: center;
+      color: white;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        display: block;
+        margin: 10px 0 0 0;
+        font-size: 22px;
+      }
+
+      .galeria img {
+        width: 90%;
+        height: auto;
+      }
+
+      iframe {
+        height: 200px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Mi Página Web -Merly Díaz </h1>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#acerca">Acerca de</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+  <header>
+    <img src="https://i.pinimg.com/736x/0a/be/b2/0abeb2cb72c4a780b775316652c79a3f.jpg" alt="Logo Sporting Cristal">
+    <h1>Sporting Cristal - El Mejor Club del Perú</h1>
+  </header>
 
-    <section id="inicio">
-        <h2>Inicio</h2>
-        <p>Esta es una página web sencilla hecha con HTML y CSS.</p>
-    </section>
+  <div class="contenido">
+    <p>Sporting Cristal, fundado en 1955, es uno de los clubes más grandes y exitosos del Perú. Con una historia llena de gloria, jugadores legendarios y títulos nacionales, el club ha sido protagonista en torneos internacionales y símbolo del fútbol bien jugado.</p>
 
-    <section id="acerca">
-        <h2>Acerca de</h2>
-        <p>Este es un sitio web básico para demostrar cómo crear una página web.</p>
-    </section>
+    <div class="video">
+      <h2>Resumen</h2>
+      <iframe src="https://www.youtube.com/embed/kM4ABW9CLZI" frameborder="0" allowfullscreen></iframe>
+    </div>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Si tienes alguna pregunta, contáctame a través del correo electrónico: ejemplo@correo.com</p>
-    </section>
+    <h2>Galería de Imágenes</h2>
+    <div class="galeria">  
+      <img src="https://www.infobae.com/resizer/v2/W6NTXQFVHRERHLFAWQC2TNF4RM.png?auth=9224035f858aab34057102f644685f12d5904b660d1b90e28676698bcd46f33d&smart=true&width=992&height=558&quality=85" alt="Plantel Sporting Cristal 2024">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhZViZ9jf3Da_J4RmVe6P264D2lL3BvuXtnw&s" alt="Hinchas de Sporting Cristal">
+      <img src="https://tmb.canchaenmancha.com/Pv_RW6aEuzlxgpv-VHPZFwgWjSM=/1200x770/filters:format(webp)/https://content.canchaenmancha.com/wp-content/uploads/2024/12/Sporting-Cristal-2.jpg" alt="Aniversario de Sporting Cristal">
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
-    </footer>
+    <h2>Palmarés Nacional</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Año</th>
+          <th>Título</th>
+          <th>Detalles</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1956</td>
+          <td>Campeón Nacional</td>
+          <td>Debut profesional con campeonato</td>
+        </tr>
+        <tr>
+          <td>1996</td>
+          <td>Finalista Libertadores</td>
+          <td>Hazaña histórica</td>
+        </tr>
+        <tr>
+          <td>2012</td>
+          <td>Campeón Nacional</td>
+          <td>Gran temporada de Irven Ávila</td>
+        </tr>
+        <tr>
+          <td>2020</td>
+          <td>Campeón Nacional</td>
+          <td>Bajo Roberto Mosquera</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    &copy; 2025 Sporting Cristal - Orgullo Celeste. Todos los derechos reservados.
+  </footer>
+
 </body>
 </html>
